@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>october</title>
+    <link rel="stylesheet" href="./shop.css">
+  </head>
+  <body>
+    <header>
+        <div class="logo">DevShop</div>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder = "Search products...">
+        </div>
+        <button id="cart-toggle">Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <main>
+      <!-- Product Catalog -->
+       <section id="products-container" class="products-grid"></section>
+
+       <!-- Shopping Cart Modal Slideout -->
+        <aside id="cart-modal" class="cart-modal hidden">
+          <h2>Your Cart</h2>
+          <div id="cart-items"></div>
+          <div class="cart-total">
+            Total: $<span id="cart-total-price">0.00</span>
+          </div>
+          <button id="checkout-btn">Checkout</button>
+          <button id="close-cart">Close</button>
+        </aside>
+
+    </main>
+
+    
+    <script src="./shop.js"></script>
+  </body>
+</html>
